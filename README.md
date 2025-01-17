@@ -3,6 +3,8 @@ A demo app that scans and reports scan results to an EventBridge Rule and on to 
 
 We did not get the worker running that listened to the events yet (timeboxed spike).
 
+Relates to this spike https://confluence.dev.bbc.co.uk/pages/viewpage.action?pageId=436802401
+
 What you can do:
 - Setup infrastructure
   - Creates an ECR repository you can push to
