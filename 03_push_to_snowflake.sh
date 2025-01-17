@@ -15,7 +15,8 @@ docker pull $ECR/$IMAGE:$SEMVER
 snow spcs image-registry login
 
 # tag the image so it can be pushed
-SNOWFLAKE_TAG=bbcstudios-bbcstudios-test.registry.snowflakecomputing.com/tutorial_db/alex_test_data_schema/tutorial_repository/$IMAGE:$SEMVER
+SNOWFLAKE_REGISTRY_URL=$(snow spcs image-registry url)
+SNOWFLAKE_TAG=$SNOWFLAKE_REGISTRY_URL/tutorial_db/alex_test_data_schema/tutorial_repository/$IMAGE:$SEMVER
 echo $SNOWFLAKE_TAG
 docker image tag $ECR/$IMAGE:$SEMVER $SNOWFLAKE_TAG
 
