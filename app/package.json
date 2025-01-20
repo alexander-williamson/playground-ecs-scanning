@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.3",
+    "axios": "^0.28.0",
     "koa": "^2.15.3",
     "koa-bodyparser": "^4.4.1",
     "koa-json": "^2.0.2",
